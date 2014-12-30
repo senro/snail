@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>标题</title>
+    <meta name="description" content="描述"/>
+    <meta name="keywords" content="关键词"/>
+    <meta name="copyright" content="苏州蜗牛数字科技股份有限公司"/>
+    <meta name="author" content="senro"/>
+    <style>
+        .menu{
+            background: url(./navbg.png);
+        }
+        .menu-btn{}
+        .menu-btn1{}
+        .menu-btn2{}
+        .menu-btn3{}
+    </style>
+</head>
+<body>
+<div class="menu">
+    <a class="btn btn1" href="#"></a>
+    <a class="btn btn2" href="#"></a>
+    <a class="btn btn3" href="#"></a>
+</div>
+<script type="text/javascript">
+    require('jquery');
+    var menu=function(){
+        menu.click=function(index,callback){
+            $('.menu').eq(index).bind('click',callback);
+        }
+    };
+
+    menu();
+
+    menu.click(1,function(){
+        alert('click 1');
+    });
+</script>
+</body>
+</html>
