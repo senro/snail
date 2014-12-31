@@ -7,30 +7,23 @@
     <meta name="keywords" content="关键词"/>
     <meta name="copyright" content="苏州蜗牛数字科技股份有限公司"/>
     <meta name="author" content="senro"/>
-    <style>
-        .reg{}
-        .reg-container{}
-    </style>
+    <link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
-
-<div class="reg">
+<div class="bg">
     <div class="container">
-
+        <div class="header">
+            @require(menu.html);
+        </div>
+        <div class="main"></div>
+        <div class="footer"></div>
     </div>
 </div>
+<div class="pop">
+    @require(reg.html);
+</div>
 
-<script type="text/javascript">
-    require('register');
-    require('jquery');
-
-    var reg=function(){
-        register('#form');
-        reg.hide=function(){
-           $('.reg').hide();
-        };
-    };
-    reg();
-</script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
